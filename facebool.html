@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook-Login Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .flex {
+            display: flex;
+            align-items: center;
+        }
+        
+        .container {
+            justify-content: center;
+            padding: 0 15px;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+        }
+        
+        .facebook-page {
+            justify-content: space-around;
+            display: flex;
+            max-width: 1000px;
+            width: 100%;
+        }
+        
+        .facebook-page h1 {
+            color: #1877f2;
+            font-size: 4rem;
+            margin-bottom: 10px;
+        }
+        
+        .facebook-page p {
+            font-size: 1.75rem;
+            white-space: nowrap;
+        }
+        
+        form {
+            background: white;
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        
+        form input {
+            height: 55px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            font-size: 1rem;
+            padding: 0 14px;
+        }
+        
+        form input:focus {
+            outline: none;
+            border-color: #1877f2;
+        }
+        
+         ::placeholder {
+            color: #777;
+            font-size: 1.063rem;
+        }
+        
+        .link {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 15px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .link .login {
+            background-color: #1877f2;
+            border: none;
+            border-radius: 3px;
+            color: white;
+            height: 35px;
+            cursor: pointer;
+            padding: 15px, 0px;
+            font-size: 1.25rem;
+            transition: 0.2s ease;
+            outline: none;
+            font-weight: 600;
+        }
+        
+        .link .login:hover {
+            cursor: pointer;
+            background: #0d65d9;
+        }
+        
+        .link .forgot {
+            color: #1877f2;
+            font-size: 0.875rem;
+            margin-bottom: 23px;
+        }
+        
+        .link .forgot:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        
+        hr {
+            border: none;
+            background-color: #ccc;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            height: 1px;
+        }
+        
+        .button {
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 20px;
+        }
+        
+        .button a {
+            background-color: #42b72a;
+            padding: 15px 20px;
+            border-radius: 10px;
+            color: white;
+            font-weight: 700;
+        }
+        
+        .button a:hover {
+            cursor: pointer;
+            background-color: #3ba626;
+        }
+        
+        @media (max-width:900px) {
+            .facebook-page {
+                flex-direction: column;
+                text-align: center;
+            }
+            .facebook-page .text {
+                margin-bottom: 30px;
+            }
+        }
+        
+        @media (max-width:460px) {
+            .facebook-page h1 {
+                font-size: 3.5rem;
+            }
+            .facebook-page p {
+                font-size: 1.35rem;
+            }
+            form {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="facebook-page flex">
+            <div class="text">
+                <h1>facebook</h1>
+                <p>Connect with friends and the world </p>
+                <p> around you on Facebook.</p>
+            </div>
+            <form action="#">
+                <input type="email" placeholder="Email or phone number" required>
+                <input type="password" placeholder="Password" required>
+                <div class="link">
+                    <button type="submit" class="login">Login</button>
+                    <a href="#" class="forgot">Forgot password?</a>
+                </div>
+                <hr>
+                <div class="button">
+                    <a href="#">Create new account</a>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
